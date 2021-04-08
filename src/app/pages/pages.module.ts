@@ -12,7 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { AccountSettingsComponent } from './account-settings/account-settings.component'
 
 
 
@@ -27,10 +28,12 @@ const PAGES_COMPONENT = [
 
 @NgModule({
   declarations: [
-    PAGES_COMPONENT
+    PAGES_COMPONENT,
+    AccountSettingsComponent
   ],
   exports: [
-    PAGES_COMPONENT
+    PAGES_COMPONENT,
+    AccountSettingsComponent
   ],
   imports: [ 
     CommonModule,
