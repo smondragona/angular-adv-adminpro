@@ -13,7 +13,9 @@ import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { FormsModule } from '@angular/forms';
-import { AccountSettingsComponent } from './account-settings/account-settings.component'
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component'
 
 
 
@@ -29,11 +31,14 @@ const PAGES_COMPONENT = [
 @NgModule({
   declarations: [
     PAGES_COMPONENT,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     PAGES_COMPONENT,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent
   ],
   imports: [ 
     CommonModule,
